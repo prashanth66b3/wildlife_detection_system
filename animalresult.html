@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Prediction Result</h1>
+    <img  class= 'ip' src="{{ url_for('static', filename='imgs/' + img) }}" alt="Uploaded Image">
+    <p>Predicted Class: {{ predicted_class }}</p>
+    <p>type: {{ type }}</p>
+<!--    <p>Injured: {{ injurity }}</p>-->
+</div>
+</body>
+</html>
